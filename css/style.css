@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--ff-primary: "Poppins", sans-serif;
+	--clr-bg: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
+}
+
+body {
+	margin: 0;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-family: var(--ff-primary);
+	background: var(--clr-bg);
+}
+
+header,
+section {
+	display: flex;
+	align-items: center;
+}
+
+/* btn */
+img{
+	cursor: pointer;
+}
+
+header img{
+	height: 5vh;
+}
+
+section img{
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px #E9E9EA;
+	border-radius: 50%;
+	padding: 1em;
+}
+
+/* Layout heirachy
+.app
+   header #nav
+   main #card
+   section #buttons
+*/
+.app {
+	border: 1px solid black;
+	border-radius: 0.5rem;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	/* 81px, 750px, 150px */
+	/* grid-template-rows: 5em 1fr 9em; */
+	width: 100%;
+	max-width: 550px;
+}
+
+header {
+	justify-content: space-between;
+	padding: 0.5em;
+}
+
+main{
+	background-image: url("../images/dog-teddy.jpg");
+}
+
+section {
+	justify-content: center;
+   gap: 1rem;
+	padding: 1em;
+}

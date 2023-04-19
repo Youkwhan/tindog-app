@@ -16,7 +16,7 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
 		<div class="app">
@@ -25,15 +25,19 @@
 				<img class="logo" src="images/logo.png" alt="logo" />
 				<img class="icon-chat" src="images/icon-chat.png" alt="chat" />
 			</header>
-			<main>
-				<div class="card"></div>
+			<main id="card" style="border:1px solid red">
+				<!-- dynamically rendered -->
+				<div class="hero-text">
+					
+					
+				</div>
 			</main>
-			<section class="buttons">
-				<img class="icon-cross" src="images/icon-cross.png" alt="cross" />
-				<img class="icon-heart" src="images/icon-heart.png" alt="heart" />
+			<section id="buttons">
+					<img class="icon-cross" src="images/icon-cross.png" alt="cross" />
+					<img class="icon-heart" src="images/icon-heart.png" alt="heart" />
 			</section>
 		</div>
 
-		<script src="/index.js" type="module"></script>
+		<script src="index.js" type="module"></script>
 	</body>
 </html>
