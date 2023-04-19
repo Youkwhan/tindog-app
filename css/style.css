@@ -24,11 +24,11 @@ section {
 	align-items: center;
 }
 
-/* btn */
-img{
-	cursor: pointer;
+main{
+	position: relative;
 }
 
+/* button */
 header img{
 	height: 5vh;
 }
@@ -38,6 +38,22 @@ section img{
 	box-shadow: 0px 10px 20px #E9E9EA;
 	border-radius: 50%;
 	padding: 1em;
+	height: 10vh;
+}
+
+/* image */
+.hero{
+	max-width:95%;
+	max-height: 100%;
+	margin: auto;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+}
+
+.hero-text{
+	/* maybe */
+	position: absolute;
 }
 
 /* Layout heirachy
@@ -49,11 +65,6 @@ section img{
 .app {
 	border: 1px solid black;
 	border-radius: 0.5rem;
-
-	display: grid;
-	grid-template-columns: 1fr;
-	/* 81px, 750px, 150px */
-	/* grid-template-rows: 5em 1fr 9em; */
 	width: 100%;
 	max-width: 550px;
 }
@@ -61,10 +72,6 @@ section img{
 header {
 	justify-content: space-between;
 	padding: 0.5em;
-}
-
-main{
-	background-image: url("../images/dog-teddy.jpg");
 }
 
 section {
