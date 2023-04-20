@@ -119,7 +119,7 @@ section {
 }
 
 .like-dislike{
-	opacity: 0;
+	/* opacity: 0; */
 	position: relative;
 	width: 40%;
 	top: 4em;
