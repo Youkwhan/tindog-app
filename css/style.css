@@ -17,47 +17,71 @@ body {
 	font-family: var(--ff-primary);
 	background: var(--clr-bg);
 }
-
+h1,p{
+	margin: 0;
+}
 header,
 section {
 	display: flex;
 	align-items: center;
 }
 
-main{
-	position: relative;
-}
-
 /* button */
-header img{
-	height: 5vh;
+header img {
+	height: 4vh;
 }
 
-section img{
-	background: #FFFFFF;
-	box-shadow: 0px 10px 20px #E9E9EA;
+section img {
+	background: #ffffff;
+	box-shadow: 0px 10px 20px #e9e9ea;
 	border-radius: 50%;
 	padding: 1em;
-	height: 10vh;
+	height: 8vh;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+.icon-cross:hover {
+	background-color: #ffe7ef;
+	box-shadow: 0px 10px 20px #edd9df;
+}
+
+.icon-heart:hover {
+	background-color: #dbfff4;
+	box-shadow: 0px 10px 20px #ccf1e6;
 }
 
 /* image */
-.hero{
-	max-width:100%;
+.hero {
+	max-width: 100%;
 	max-height: 100%;
 	margin: auto;
 	display: block;
 	object-fit: cover;
 	object-position: center;
-
+	/* aspect-ratio: 1/2; */
 	border-radius: 0.5em;
 }
 
-.hero-text{
-	/* maybe */
-	position: absolute;
+.hero-content {
+	z-index: 10;
+	align-self: end;
+	background: transparent;
+	margin: 0.5rem;
+	padding: 0.5rem;
 }
 
+.stacked {
+	display: grid;
+}
+
+.stacked > * {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
 /* Layout heirachy
 .app
    header #nav
@@ -65,19 +89,41 @@ section img{
    section #buttons
 */
 .app {
-	border: 1px solid black;
+	border: 3px solid whitesmoke;
 	border-radius: 0.5rem;
 	width: 100%;
 	max-width: 550px;
+
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 header {
 	justify-content: space-between;
-	padding: 0.5em;
+	padding: 1em;
 }
 
 section {
 	justify-content: center;
-   gap: 1rem;
+	gap: 1rem;
 	padding: 1em;
+}
+
+.hero-title{
+	color: whitesmoke;
+	padding-bottom: 0.5em;
+}
+
+.hero-body {
+	/* one way to lighten text LOL DONT use opacity oops*/
+	color: rgb(255 255 255 / 0.5);
+}
+
+.like-dislike{
+	opacity: 0;
+	position: relative;
+	width: 40%;
+	top: 4em;
+	left: 1em;
+	transform: rotate(-0.10turn);
+
 }
